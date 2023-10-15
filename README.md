@@ -16,8 +16,6 @@ This project is a Django-based web application.
 
    ```bash
    git clonehttps://github.com/amjadahmadi/insurance-challenge.git
-   cd insurance-challenge
-   python3 -m venv venv
    ```
 2. Navigate to the project directory: 
    ```bash
