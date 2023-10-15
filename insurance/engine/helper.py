@@ -10,8 +10,8 @@ def map_category(value):
 
 
 class Insurance:
-    def __init__(self, age: int, dependents: int, house: dict | None, income: int, marital_status: str,
-                 risk_questions: list, vehicle: dict | None):
+    def __init__(self, age: int, dependents: int, income: int, marital_status: str,
+                 risk_questions: list, vehicle: dict | None=None, house: dict | None=None):
         self.age = age
         self.dependents = dependents
         self.house = house
