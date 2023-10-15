@@ -45,7 +45,7 @@ This project is a Django-based web application.
    ```bash
    python manage.py migrate
    ```
-#Usage
+# Usage
 
 1. Start the development server:
    ```bash
@@ -55,6 +55,6 @@ This project is a Django-based web application.
 
 2. Open your web browser and navigate to http://localhost:8000/engine/calculate/ to access the application.
 
-#csc
+# main technical decisions 
 First, I created a separate class for each insurance and used the basic insurance class to access the property of insurances that are the same. With this, the parameters that have the same effect can be applied.
 After that, we first check whether the insurance is eligible or not, then the amount of points is calculated by functions that we defined in the basic class.
