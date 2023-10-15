@@ -37,7 +37,7 @@ class Insurance:
         return income_score
 
     def calculate_home(self):
-        return 1 if self.house['ownership_status'] == 'mortgaged' else 0
+        return 1 if self.house and self.house['ownership_status'] == 'mortgaged' else 0
 
     def calculate_dependents(self):
         return 1 if self.dependents > 0 else 0
@@ -77,7 +77,7 @@ class DisabilityInsurance:
         income_score = self.insurance.calculate_income()
         home_score = self.insurance.calculate_home()
         dependents_score = self.insurance.calculate_dependents()
-        marital_score = -1 if self.insurance.marital_status == 'marital_status' else 0
+        marital_score = -1 if self.insurance.marital_status == 'married' else 0
         return map_category(
             age_score + income_score + home_score + dependents_score + marital_score + self.insurance.base_score)
 
