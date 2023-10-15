@@ -43,7 +43,7 @@ This project is a Django-based web application.
    ```
 6. Perform database migrations:  
    ```bash
-   pip install -r requirements.txt
+   python manage.py migrate
    ```
 #Usage
 
